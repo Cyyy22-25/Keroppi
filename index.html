@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Keroppi World 🐸💚</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url('86f54c23-bed4-496b-bec9-d86e709d118f.png'); /* your Keroppi image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #08d881;
+      text-align: center;
+    }
+
+    .keroppi-container {
+      background: rgba(0, 100, 0, 0.7);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 30px;
+      max-width: 800px;
+      box-shadow: 0 0 15px limegreen;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ccff33;
+      text-shadow: 2px 2px #333;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .gallery {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 4px solid #0be450;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .button {
+      background-color: #7fff00;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      color: green;
+      box-shadow: 0 0 10px #00ff00;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #00cc00;
+      color: white;
+    }
+
+    .floating-keroppi {
+      position: fixed;
+      font-size: 32px;
+      animation: floatUp 10s linear infinite;
+      pointer-events: none;
+      color: #ccff33;
+    }
+
+    @keyframes floatUp {
+      0% {
+        bottom: -50px;
+        left: calc(10% + 80% * random());
+        opacity: 1;
+      }
+      100% {
+        bottom: 100vh;
+        transform: rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="keroppi-container">
+    <h1>🐸 Welcome to Keroppi World! 💚</h1>
+    <p>Keroppi says hi! This page is made with love and green vibes only 🐸🌿</p>
+
+    <div class="gallery">
+      <img src="image/palaka.jpg" alt="Keroppi 1">
+      <img src= "image/palaka2.jpg"Keroppi 2">
+      <img src="image/palaka 3.jpg" alt="Keroppi 3">
+      <img src= "image/palaka 4.jpg"Keroppi 4">
+    </div>
+
+    <button class="button" onclick="alert('Ribbit! Keroppi loves you! 💚🐸')">
+      Click me for a Ribbit!
+    </button>
+  </div>
+
+</body>
+</html>
